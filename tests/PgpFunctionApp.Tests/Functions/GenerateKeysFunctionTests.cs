@@ -146,6 +146,7 @@ public sealed class GenerateKeysFunctionTests
         Assert.That(objectResult.StatusCode, Is.EqualTo(500));
         var response = objectResult.Value as ApiResponse;
         Assert.That(response!.Success, Is.False);
+        Assert.That(response.Message, Is.EqualTo("Failed to generate key pair."));
     }
 
     [Test]

@@ -70,7 +70,7 @@ public sealed class GenerateKeysFunction
         catch (Exception ex)
         {
             _logger.LogError(ex, "Failed to generate PGP key pair.");
-            return new ObjectResult(ApiResponse.Fail($"Failed to generate key pair: {ex.Message}"))
+            return new ObjectResult(ApiResponse.Fail("Failed to generate key pair."))
             {
                 StatusCode = StatusCodes.Status500InternalServerError
             };

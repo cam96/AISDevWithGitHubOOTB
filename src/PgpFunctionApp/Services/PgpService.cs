@@ -26,7 +26,8 @@ public sealed class PgpService : IPgpService
             cancellationToken);
 
         if (publicKeyStream.CanSeek) publicKeyStream.Seek(0, SeekOrigin.Begin);
-        if (privateKeyStream.CanSeek) privateKeyStream.Seek(0, SeekOrigin.Begin)
+        if (privateKeyStream.CanSeek) privateKeyStream.Seek(0, SeekOrigin.Begin);
+    }
 
     public async Task EncryptAsync(
         Stream inputStream,
