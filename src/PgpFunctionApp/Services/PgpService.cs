@@ -24,7 +24,9 @@ public sealed class PgpService : IPgpService
         await Task.Run(
             () => pgp.GenerateKey(publicKeyStream, privateKeyStream, identity, passphrase, strength: keyStrength),
             cancellationToken);
-    }
+
+        if (publicKeyStream.CanSeek) publicKeyStream.Seek(0, SeekOrigin.Begin);
+        if (privateKeyStream.CanSeek) privateKeyStream.Seek(0, SeekOrigin.Begin)
 
     public async Task EncryptAsync(
         Stream inputStream,
