@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+
+# Test coverage output
+coverage/
+
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+
+# OS
+.DS_Store
+Thumbs.db
