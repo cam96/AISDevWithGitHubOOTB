@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PgpFunctionApp/PgpFunctionApp.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PgpFunctionApp.Tests/PgpFunctionApp.Tests.csproj" />
+  </Folder>
+</Solution>

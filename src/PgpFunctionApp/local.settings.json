@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "PgpSettings:Passphrase": "REPLACE_WITH_SECURE_PASSPHRASE",
+    "PgpSettings:Identity": "pgp@yourdomain.com",
+    "PgpSettings:KeyStrength": "4096"
+  }
+}
